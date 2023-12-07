@@ -1,0 +1,20 @@
+version: '3'
+
+services:
+  backend:
+    image: backend  
+    ports:
+      - "8000:8000"  
+    container_name: backendc
+
+  frontend:
+    image: frontend 
+    ports:
+      - "3000:3000"  
+    container_name: frontendc
+
+  socket:
+    image: socket 
+    ports:
+      - "4000:4000" 
+    container_name: socketc
